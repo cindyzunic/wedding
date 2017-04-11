@@ -59,6 +59,10 @@ img {
   margin: auto;
 }
 
+.navbar {
+  padding: 1rem 0;
+}
+
 .nav {
   margin-bottom: 20px;
 }
@@ -114,9 +118,26 @@ img {
     left: 0;
     right: 0;
   }
-
+  .nav-item {
+    border-right: none;
+  }
   .btn-mobileblock {
     display: block;
     width: 100%;
+  }
+
+  .collapse {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+  }
+
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .show {
+    max-height: 1500px;
   }
 }

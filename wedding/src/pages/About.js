@@ -16,11 +16,11 @@ export default class About extends Component {
                     </div>
                     <div className="row">
                         <div className="col-sm">
-                            <img className="img-block" src="/assets/3.jpg" />
+                            <img className="img-block" src="/assets/3.jpg" title="Cindy and John Engagement" alt="Cindy and John Engagement" />
                         </div>
                         <div className="col-md">
-                            <img className="img-block" src="/assets/2.jpg" />
-                            <img className="img-block" src="/assets/4.jpg" />
+                            <img className="img-block" src="/assets/2.jpg" title="Cindy and John Engagement" alt="Cindy and John Engagement" />
+                            <img className="img-block" src="/assets/4.jpg" title="Cindy and John Engagement" alt="Cindy and John Engagement" />
                         </div>
                     </div>
                 </div>
