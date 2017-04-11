@@ -1,3 +1,22 @@
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/whitediamond.png");
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+}
+
+img {
+  width: 100%;
+}
+
+.img-block {
+  display: block;
+  margin-bottom: 30px;
+}
+
 .App {
   text-align: center;
 }
@@ -21,4 +40,83 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #444444;
+    border-color: #3a3a3a;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #333333;
+}
+
+.rsvp-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.nav {
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #444444;
+  margin: 0 5px;
+}
+
+.nav-link:hover {
+  text-shadow: 0 0 3px rgba(0,0,0,0.5);
+  transition-property: color;
+  transition-duration: 2s;
+}
+
+.nav-item {
+  border-right: 1px solid rgba(0,0,0, 0.1);
+}
+
+.nav-item:last-of-type {
+  border-right: none;
+}
+
+#root {
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+.event-schedule {
+  border-left: 1px dotted #444444;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.event-map > iframe {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.15);
+    border-image: none;
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 767px) {
+  #root {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .btn-mobileblock {
+    display: block;
+    width: 100%;
+  }
 }

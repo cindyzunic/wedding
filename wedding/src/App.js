@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
-import logo from './katoslavhead.png';
+import React, { Component } from 'react'; 
+import { Router, Route, browserHistory } from 'react-router';
+import About from './pages/About';
+import Event from './pages/Event';
+import Registry from './pages/Registry';
+import RSVP from './pages/RSVP';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Glenn and Zindy</h2>
-        </div>
-        <p className="App-intro">
-          Ohhhh...
-        </p>
-      </div>
+        <Router history={browserHistory}>
+          <Route path='/' component={About} />
+          <Route path='/event' component={Event} />
+          <Route path='/registry' component={Registry} />
+          <Route path='/rsvp' component={RSVP} />
+        </Router>
     );
   }
 }
