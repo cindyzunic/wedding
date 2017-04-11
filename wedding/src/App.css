@@ -5,7 +5,7 @@ body {
 }
 
 h2 {
-  font-family: 'EB Garamond', serif;
+  margin-top: 1rem;
 }
 
 img {
@@ -93,22 +93,27 @@ img {
     padding: 1rem;
   }
 
-.event-schedule {
-  border-left: 1px dotted #444444;
+.event-block {
+  margin: 1rem;
+}
+
+.event-header {
   font-size: 1rem;
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-top: 20px;
-  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.event-schedule {
+  font-size: 1rem;
 }
 
 .event-map > iframe {
-    border-width: 1px;
+    border-width: 0;
     border-style: solid;
     border-color: rgba(0,0,0,0.15);
     border-image: none;
     width: 100%;
     height: 400px;
+    margin-top: 1rem;
 }
 
 @media (max-width: 767px) {

@@ -31,7 +31,7 @@ export default class RSVP extends Component {
                 <Header />
                 <div className="container-fluid">
                     <div className="rsvp-header">
-                    <h1>Cindy + John's Wedding</h1>
+                    <h1>Let us know you're coming</h1>
                     </div>
                     <p>Please enter your name as it appears on your invitation.</p>
                     <form onSubmit={this.handleSubmit}>

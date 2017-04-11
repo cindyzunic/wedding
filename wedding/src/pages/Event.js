@@ -8,18 +8,23 @@ export default class Event extends Component {
                 <Header />
                 <div className="container-fluid">
                     <h1>Time & Place</h1>
-                    <h2>Saturday, August 12th, 2017</h2>
-                    <div className="event-schedule">
-                        6:00 PM - 6:30 PM Ceremony<br />
-                        6:30 PM - 7:30 PM Cocktails<br />
-                        7:30 PM - 1:00 AM Reception
+                    <div className="row">
+                        <div className="col-md event-block">
+                            <h2 className="event-header">Saturday, August 12th, 2017</h2>
+                            <div className="event-schedule">
+                                6:00 PM - 6:30 PM Ceremony<br />
+                                6:30 PM - 7:30 PM Cocktails<br />
+                                7:30 PM - 1:00 AM Reception
                     </div>
-
-                    <h2>Cambridge Mill</h2>
-                    <div className="event-schedule">
-                        130 Water Street North, <br />
-                        Cambridge, ON N1R 1P1 <br />
-                        <a href="http://cambridgemill.ca/" target="_blank" title="Cambridge Mill">cambridgemill.ca</a>
+                        </div>
+                        <div className="col-md event-block">
+                            <h2 className="event-header">Cambridge Mill</h2>
+                            <div className="event-schedule">
+                                130 Water Street North, <br />
+                                Cambridge, ON N1R 1P1 <br />
+                                <a href="http://cambridgemill.ca/" target="_blank" title="Cambridge Mill">cambridgemill.ca</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="event-map">
