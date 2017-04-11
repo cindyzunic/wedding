@@ -15,7 +15,7 @@ export default class Misc extends Component {
 
                     <h2>Food & Drink</h2>
                     <p>Hors d'oeuvres will be served during the cocktail hour. Dinner will be served at 7:30 PM. 
-                        You will have your choice of an appetizer, entree, and dessert, to be selected during the cocktail hour. 
+                        You will have an appetizer, your choice of entree, and dessert. 
                         A vegetarian option will, of course, be available.
                         A late night table will consist of fresh fruit, bread and cheese, and various sweets.
                         The reception is open bar - you're welcome. :) 
