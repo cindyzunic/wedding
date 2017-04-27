@@ -35,7 +35,7 @@ export default class About extends Component {
                         <div className="col-md">
                             <h2>Groom</h2>
                             <p>Glenn is a 24-year old transportation planner. Glenn likes riding bicycles, looking at trains, calling
-                                his brothers, saying Marksch!, and asking Cindy for footrubs.
+                                his brothers, saying Markschs!, and asking Cindy for footrubs.
                             </p>
                         </div>
                     </div>
@@ -59,13 +59,13 @@ export default class About extends Component {
                     </div>
                     <div className="row">
                         <div className="col-md">
-                            <img className="img-block" src="/assets/lauriealex.png" title="Laurie & Alex" title="Laurie & Alex" />
+                            <img className="img-block" src="/assets/lauriealex.png" title="Laurie & Alex" alt="Laurie & Alex" />
                         </div>
                         <div className="col-md">
                             <img className="img-block" src="https://instagram.fymy1-2.fna.fbcdn.net/t51.2885-15/e15/12145176_1505489953097158_660938057_n.jpg" title="Tony & Amanda" alt="Tony & Amanda" />
                         </div>
                         <div className="col-md">
-                            <img className="img-block" src="/assets/mrk.png" title="Mrk! & Natalie" alt="Mrk! & Natalie" />
+                            <img className="img-block" src="/assets/mrk.png" title="Natalie & Mrk!" alt="Mrk! & Natalie" />
                         </div>
                     </div>
 
