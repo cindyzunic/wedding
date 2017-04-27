@@ -1,78 +1,43 @@
 import React, { Component } from "react";
-import Header from "../components/Header";
+import IdentityFields from "../components/IdentityFields";
+import ResponseFields from "../components/ResponseFields";
 
 export default class RSVP extends Component {
     constructor() {
         super();
         this.state = {
-            firstName: '',
-            lastName: '',
-            postalCode: ''
+            step: 1
         };
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange(e) {
-        const name = e.target.name;
-        const value = e.target.value;
-        this.setState({ [name]: value });
+    saveValues(fields) {
+        this.values = fields;
     }
 
-    handleSubmit(e) {
-        console.log(this.state);
-        e.preventDefault();
+    nextStep() {
+        this.setState({ step: this.state.step + 1 });
     }
 
     render() {
-        return (
-            <div className="rsvp-container">
-                <Header />
-                <div className="container-fluid">
-                    <div className="rsvp-header">
-                    <h1>Let us know you're coming</h1>
-                    </div>
-                    <p>Please enter your name as it appears on your invitation.</p>
-                    <form onSubmit={this.handleSubmit}>
-                        <div className="form-group">
-                            <label htmlFor="firstname" >First Name:</label>
-                            <input
-                                name="firstName"
-                                type="text"
-                                value={this.state.firstName}
-                                onChange={this.handleChange} 
-                                className="form-control"
-                                id="firstname"
-                                placeholder="Enter first name" />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="lastname">Last Name:</label>
-                            <input
-                                name="lastName"
-                                type="text"
-                                value={this.state.lastName}
-                                onChange={this.handleChange}
-                                className="form-control"
-                                id="lastname"
-                                placeholder="Enter last name" />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="postalcode">Postal Code:</label>
-                            <input
-                                name="postalCode"
-                                type="text"
-                                value={this.state.postalCode}
-                                onChange={this.handleChange}
-                                className="form-control"
-                                id="postalcode"
-                                placeholder="Enter postal code"
-                                maxLength="6" />
-                        </div>
-                        <button type="submit" className="btn btn-primary btn-mobileblock">Continue</button>
-                    </form>
-                </div>
-            </div>
-        );
+        switch (this.state.step) {
+            case 1:
+                return <IdentityFields
+                    values={this.values}
+                    nextStep={this.nextStep.bind(this)}
+                    saveValues={this.saveValues.bind(this)}
+                />;
+            case 2:
+                return <ResponseFields
+                    values={this.values}
+                    nextStep={this.nextStep.bind(this)}
+                    saveValues={this.saveValues.bind(this)}
+                />;
+            default:
+                return <IdentityFields
+                    values={this.values}
+                    nextStep={this.nextStep.bind(this)}
+                    saveValues={this.saveValues.bind(this)}
+                />;
+        }
     }
 }

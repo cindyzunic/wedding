@@ -17,6 +17,23 @@ img {
   margin-bottom: 30px;
 }
 
+.u-block {
+  display: block;
+}
+
+.u-half-width {
+  width: 50%;
+}
+
+.u-hidden {
+  display: none;
+}
+
+.u-block > .btn {
+  border: 1px solid #444444;
+  text-transform: uppercase;
+}
+
 .App {
   text-align: center;
 }
@@ -93,6 +110,14 @@ img {
     padding: 1rem;
   }
 
+.decline-textarea {
+    display: block;
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid #444444;
+    min-height: 300px;
+    margin-bottom: 10px;
+}
 .event-block {
   margin: 1rem;
 }
