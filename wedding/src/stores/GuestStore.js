@@ -49,7 +49,7 @@ class GuestStore extends EventEmitter {
         //takes array of guest Ids
     }
 
-    updateDecline(groupId) {
+    updateDecline(guestIds) {
         //decline all for group
     }
 
